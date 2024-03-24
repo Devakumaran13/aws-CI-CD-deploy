@@ -1,6 +1,4 @@
 # Deva AWS CI-CD
-# Cloud Configuration commands.
-aws cloudformation create-stack --capabilities CAPABILITY_IAM --stack-name ecs-core-infrastructure --template-body file://./core-infrastructure-setup.yml
 
 **CI-CD Flow in AWS:**
 ![image](https://github.com/Devakumaran13/aws-deploy/assets/85147601/0f608881-c422-464c-abc0-63143b70f678)
@@ -41,6 +39,8 @@ aws cloudformation create-stack --capabilities CAPABILITY_IAM --stack-name ecs-c
  
 **5) Creating the Infra using Cloud Formation**
 --> Create VPC and Infra using the "Cloud Formation".
+
+--> aws cloudformation create-stack --capabilities CAPABILITY_IAM --stack-name ecs-core-infrastructure --template-body file://./core-infrastructure-setup.yml
 
 **6) Creat the ECS Cluster and define the task and services.**
 	--> Create the ECS Cluster with name and AWS Fargate (serverless) option.
